@@ -6,11 +6,12 @@ const URL = require("../models/url");
 router.post("/shorten", async (req, res) => {
   const body = req.body;
   const shortID = shortid(2);
+  console.log(body);
   await URL.create({
     shortId: shortID,
     redirectUrl: body.url,
   });
-  const shortenedURL = `http://localhost:3000/api/${shortID}`;
+  const shortenedURL = `http://localhost:5000/api/${shortID}`;
   return res.send(shortenedURL);
 });
 
