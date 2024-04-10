@@ -12,12 +12,9 @@ const page = () => {
   const [isGot, setisGot] = useState(false);
   const fetchData = async () => {
     try {
-      const response = await axios.post(
-        "https://url-shortener-backend-rho.vercel.app/api/shorten",
-        {
-          url: URL,
-        }
-      );
+      const response = await axios.post("https://ohyaa.vercel.app/shorten", {
+        url: URL,
+      });
       console.log(response.data);
       setredirectLink(response.data);
       setisGot(true);

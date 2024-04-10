@@ -16,6 +16,6 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log("MongoDB connection error occurs", err));
 
-app.use("/api", urlRouter);
+app.use("/", urlRouter);
 
 app.listen(PORT, () => console.log(`Port started at ${PORT}`));
