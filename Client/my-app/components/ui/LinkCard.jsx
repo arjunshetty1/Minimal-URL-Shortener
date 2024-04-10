@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const LinkCard = ({ redirectLink }) => {
   return (
     <div
@@ -33,8 +31,8 @@ const LinkCard = ({ redirectLink }) => {
           <p className="mt-1 text-sm text-gray-700">{redirectLink}</p>
 
           <div className="mt-4 flex gap-2">
-            <Link
-              href={redirectLink}
+            <a
+              href={`https://${redirectLink}`}
               target="_blank"
               className="inline-flex items-center gap-2 rounded-lg bg-red-700 px-4 py-2 text-white hover:bg-black"
             >
@@ -54,7 +52,7 @@ const LinkCard = ({ redirectLink }) => {
                   d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
                 />
               </svg>
-            </Link>
+            </a>
 
             <button
               className="block rounded-lg px-4 py-2 text-gray-700 transition hover:bg-[#e7e7e7]"

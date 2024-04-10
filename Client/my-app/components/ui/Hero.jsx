@@ -6,7 +6,7 @@ const Hero = () => {
           <div className="mx-auto md:max-w-2xl  text-center">
             <h1 className="text-3xl  font-extrabold sm:text-5xl">
               Minimal URL Shortner
-              <strong className="font-extrabold flex-nowrap  text-red-700 sm:block">
+              <strong className="font-extrabold flex-nowrap text-[1.4rem] md:text-4xl md:mt-2 text-red-700 sm:block">
                 {" "}
                 Seedhi baath, No backwaas.{" "}
               </strong>

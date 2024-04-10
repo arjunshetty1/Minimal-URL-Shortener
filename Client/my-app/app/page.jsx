@@ -15,7 +15,7 @@ const page = () => {
       const response = await axios.post("https://ohyaa.vercel.app/shorten", {
         url: URL,
       });
-      console.log(response.data);
+
       setredirectLink(response.data);
       setisGot(true);
     } catch (error) {
@@ -33,7 +33,7 @@ const page = () => {
             value={URL}
             onChange={(e) => setURL(e.target.value)}
             type="text"
-            placeholder="https://"
+            placeholder="Enter the URL here"
           />
 
           <button
