@@ -6,9 +6,8 @@ const LinkCard = ({ redirectLink }) => {
       role="alert"
       className=" transition ease-in-out hover:-translate-y-1 duration-700  flex justify-between rounded-xl border border-gray-100 bg-white p-4"
     >
-      
       <div className="flex items-start gap-4">
-        <span className="text-green-600">
+        <span className="text-red-700">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -36,7 +35,8 @@ const LinkCard = ({ redirectLink }) => {
           <div className="mt-4 flex gap-2">
             <Link
               href={redirectLink}
-              className="inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700"
+              target="_blank"
+              className="inline-flex items-center gap-2 rounded-lg bg-red-700 px-4 py-2 text-white hover:bg-black"
             >
               <span className="text-sm"> Visit </span>
 
@@ -65,10 +65,12 @@ const LinkCard = ({ redirectLink }) => {
           </div>
         </div>
       </div>
-      <div><span class="relative flex h-3 w-3">
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-        <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
-      </span></div>
+      <div>
+        <span class="relative flex h-3 w-3">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-700 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-red-700"></span>
+        </span>
+      </div>
     </div>
   );
 };

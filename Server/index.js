@@ -2,18 +2,20 @@ const express = require("express");
 const mongoose = require("mongoose");
 const urlRouter = require("./routes/url");
 const app = express();
-const cors = require("cors"); // Import the CORS middleware
+const cors = require("cors");
+require("dotenv").config();
 
-const PORT = 5000;
+const PORT = process.env.PORT;
+const MONGODB_URI = process.env.MONGODB_URI;
+
 app.use(cors());
-
 app.use(express.json());
 
 mongoose
-  .connect("mongodb://localhost:27017/urlshortner")
-  .then(() => console.log("MongoDB connnected"))
-  .catch((err) => console.log("MongoDB connection error occures", err));
+  .connect(MONGODB_URI)
+  .then(() => console.log("MongoDB connected"))
+  .catch((err) => console.log("MongoDB connection error occurs", err));
 
 app.use("/api", urlRouter);
 
-app.listen(PORT, () => console.log("Port started at 5000"));
+app.listen(PORT, () => console.log(`Port started at ${PORT}`));

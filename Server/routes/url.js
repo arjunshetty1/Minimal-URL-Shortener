@@ -5,7 +5,7 @@ const URL = require("../models/url");
 
 router.post("/shorten", async (req, res) => {
   const body = req.body;
-  const shortID = shortid(2);
+  const shortID = shortid(5);
   console.log(body);
   await URL.create({
     shortId: shortID,
