@@ -11,7 +11,7 @@ router.post("/shorten", async (req, res) => {
     shortId: shortID,
     redirectUrl: body.url,
   });
-  const shortenedURL = `http://localhost:5000/api/${shortID}`;
+  const shortenedURL = `https://url-shortener-backend-rho.vercel.app/api/${shortID}`;
   return res.send(shortenedURL);
 });
 
