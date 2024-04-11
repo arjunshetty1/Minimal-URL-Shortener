@@ -25,7 +25,7 @@ const LinkCard = ({ redirectLink }) => {
         <div className="flex-1">
           <strong className="block font-medium text-gray-900">
             {" "}
-            URL Shorterned{" "}
+            URL Shortened{" "}
           </strong>
 
           <p className="mt-1 text-sm text-gray-700">{redirectLink}</p>

@@ -6,7 +6,7 @@ const Hero = () => {
           <div className="mx-auto text-center">
             <div className="flex flex-col">
               <h1 className="text-3xl font-extrabold sm:text-5xl">
-                Minimal URL Shortner
+                Minimal URL Shortener
               </h1>
               <strong className="font-extrabold flex-nowrap text-[1.4rem] md:text-4xl md:mt-2 text-red-700 sm:block">
                 {" "}
