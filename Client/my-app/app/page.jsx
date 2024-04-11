@@ -2,7 +2,6 @@
 import Hero from "@/components/ui/Hero";
 import LinkCard from "@/components/ui/LinkCard";
 import { Input } from "@/components/ui/input";
-
 import axios from "axios";
 import { useState } from "react";
 
@@ -25,7 +24,6 @@ const page = () => {
 
   return (
     <>
-      <div></div>
       <div className="flex md:mt-[30vh] mt-[10rem] flex-col gap-11">
         <Hero />
         <div className="flex w-full max-w-[35rem] px-7 md:px-0 items-center space-x-2 m-auto">
